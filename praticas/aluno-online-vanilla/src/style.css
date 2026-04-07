@@ -124,8 +124,7 @@ footer {
 }
 
 /* RESPONSIVIDADE */
-@media (max-width: 768px) {
-  
+@media (width <= 768px) {
   main {
     flex-direction: column;
   }
