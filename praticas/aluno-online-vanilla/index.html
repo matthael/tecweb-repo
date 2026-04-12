@@ -1,74 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aluno Online</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aluno Online</title>
+
+  <link rel="stylesheet" href="/src/login.css" />
 </head>
-  <body>
-    <main>
+<body>
 
-      <aside>     
-        <header>
-          <h1>Aluno Online</h1>
-        </header>
-        <nav>
-          <ul>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Notas</a></li>
-            <li><a href="#">Faltas</a></li>
-            <li><a href="#">Boletos</a></li>
-            <li><a href="#">Requerimentos</a></li>
-            <li><a href="#">Sair</a></li>
-          </ul>
-        </nav>
-      </aside>
+  <main class="container">
+    <form id="loginForm" class="form">
 
-      <section>
+      <div class="logo">
+        <img src="/public/graduation.png" alt="Logo" />
+        <h1>Aluno Online</h1>
+      </div>
 
-        <header>
-          <h2>Olá, Aluno!</h2>
-        </header>
+      <div class="campo">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" />
+        <p id="erro-email" class="erro"></p>
+      </div>
 
-        <article>
-          <h3>Bem-vindo ao portal do aluno</h3>
-          <section>
-            <h4>Mural de Avisos</h4>
-            <ul>
-              <li>Inscrição para o projeto de extensão</li>
-              <li>Eleição para representante de turma</li>
-            </ul>
-          </section>
+      <div class="campo">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" />
+        <p id="erro-senha" class="erro"></p>
+      </div>
 
-          <section>
-            <h4>Calendário Acadêmico</h4>
-            <ul>
-              <li>23/02 - Início do período letivo 2026-1</li>
-              <li>25/04 - Prazo final para aplicação da P1</li>
-              <li>23/06 - Prazo final para aplicação da P2</li>
-              <li>04/07 - Fim do período letivo 2026-1</li>
-            </ul>
-          </section>
+      <button type="submit">Entrar</button>
 
-          <section>
-            <h4>Minhas Disciplinas</h4>
-            <ul>
-              <li>Bancos de Dados I (HMDC253)</li>
-              <li>Estrutura de Dados (MDC127)</li>
-              <li>Tecnologias Web (HMDC251)</li>
-            </ul>
-          </section>
+    </form>
+  </main>
 
-        </article>
-        
-      </section>
+  <footer>
+    <p>© 2026. Todos os direitos reservados.</p>
+  </footer>
 
-    </main>
-
-    <footer>
-      <p>&copy; 2026 Aluno Online</p>
-    </footer>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+  <script type="module" src="/src/login.js"></script>
+</body>
 </html>
